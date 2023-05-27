@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.toggle-btn{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.4s;
+    height: fit-content;
+}
+.toggle-btn:hover{
+    transition: 0.5s;
+
+}
+
+.btn-line{
+    background-color: red;
+    width: 20px;
+    height: 3px;
+    margin-top: 3px;
+}
+
+
+
+
+.nav-bar{
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.953);
+    
+}
+.brand-name{
+    color: white;
+
+}
+ul{
+    padding: 0px;
+    display: flex;
+    margin-right: 25px;
+    justify-content: center;
+    list-style: none;   
+    
+}
+
+ul li a {
+    padding :15px 25px;
+    text-decoration: none;
+    margin: 0 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+ul li a:hover{
+    background-color: azure;
+    color: black;
+    transition: 0.4s;
+}
+
+@media screen and (max-width:616px) {
+
+    
+    ul{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin-top: 25px;
+        display: none;
+
+    }  
+    ul li  {
+        padding:  15px;
+    }
+
+    .toggle-btn{
+        display: flex;
+
+    }
+
+    .active{
+        display:flex;
+        transition: 0.5s;
+
+    }
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+.container{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.item1{
+    background-color: orange;
+   
+}
+
+.item2{
+    background-color: red;
+    
+}
+
+.item3{
+    background-color: greenyellow;
+    
+}
+
+#item{
+    margin: 10px 20px;
+    height: 130px;
+    width: 350px;
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+@media screen and (max-width:900px) {
+   
+    .container{
+        flex-direction: column;
+    }
+   
+}
+#item:hover{
+    background-color: rgba(13, 60, 60, 0.878);
+    color: whitesmoke;
+    cursor: pointer;
+    transition:0.5s;
+    width: 375px;
+    height: 175px;
+}
